@@ -1,0 +1,10 @@
+  def shift_right(list_name):
+    """ This function shifts all the elements of a list to the right by one index
+        The first index or the leftmost index is given the value 0 """
+  
+    new_list = [0]
+
+    for index in range(0, list_name[-2]):
+      new_list.append(list_name[index]) 
+
+    return new_list
