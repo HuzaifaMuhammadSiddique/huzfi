@@ -1,0 +1,10 @@
+  def permutation(n, r):
+    """ This function calculates nPr. nPr is basically a measure of how many different arrangements are possible if we have r spaces
+        and total objects are n. Order does not matter in nPr. """
+
+    if n >= r and n >= 1 and r >= 1:
+      result = factorial(n) / factorial(n - r)
+      return int(result)
+
+    else:
+      print("Error! First value(n) must be equal to or less than the second value(r)!")
