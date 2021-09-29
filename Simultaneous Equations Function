@@ -1,0 +1,56 @@
+ def simultaneous_equation():
+   """ This function solves two simultaneous equations."""
+
+    print("For two simultaneous equations like these:")
+    print(" ax + by = c")
+    print(" dx + ey = f")
+    print("You need to input a, b, c, d, e and f in order for the program to find the values of x and y")
+    print("YOU ARE ONLY ALLOWED TO ENTER NUMBERS!")
+    print("________________________________________________________________________________")
+
+
+    a = int(input("a = "))
+    b = int(input("b = "))
+    c = int(input("c = "))
+    d = int(input("d = "))
+    e = int(input("e = "))
+    f = int(input("f = "))
+
+
+    if a == 0 or b == 0 or d == 0 or e == 0:
+      print("Co-efficients of X or Y cannot be zero. Please re-enter correct Values")
+    else:
+      if a == d:
+       x = a - d
+       y = b - e
+       constant =  c - f
+       y = constant / y
+  
+       x = y * b
+       x = c - x
+       x = x / a
+
+       print("X = " + str(x) )
+       print("Y = " + str(y) )
+
+      elif a != d:
+       new_a = a * d
+       new_d = a * d
+
+       new_b = b * d
+       new_c = c * d
+
+       new_e = e * a
+       new_f = f * a
+  
+       x = new_a - new_d
+       y = new_b - new_e
+       constant =  new_c - new_f
+       y = constant / y
+
+       x = y * b
+       x = c - x
+       x = x / a
+
+       print("X = " + str(x) )
+       print("Y = " + str(y) )
