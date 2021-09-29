@@ -1,0 +1,10 @@
+  def combination(n, r):
+    """ This function calculates nCr. nCr is basically the calculation of how many combinations of r objects are possible if 
+        we have a total of n objects. Order is taken in account in nCr. """
+
+    if n >= r and n >= 1 and r >= 1:
+      result = factorial(n) / (factorial(r) * factorial(n - r))
+      return int(result)
+
+    else:
+      print("Error! First value(n) must be equal to or less than the second value(r)!")
