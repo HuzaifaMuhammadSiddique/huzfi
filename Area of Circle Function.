@@ -1,0 +1,10 @@
+import math
+
+def area_of_circle(r):
+  """This function calculates the area of any circle given its radius."""
+
+  area = math.pi * (r ** 2)
+  return round(area)
+  
+area_of_circle(7)   # Outputs 154 because area is rounded to the nearest whole number!
+  
