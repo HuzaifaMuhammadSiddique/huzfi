@@ -1,0 +1,6 @@
+def absolute(n):
+  """ This function applies the absolute operator on a number. """
+  if n >= 0:
+    return n
+  else: 
+    return (n * - 1)
