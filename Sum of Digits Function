@@ -1,0 +1,89 @@
+def sum_of_digits(number, degree):
+  """ This function calculates the sum of digits of a number to a given degree. If the value of degree is 2, the function
+      will calculate the sum of sum of digits of the number.
+  """
+
+  if degree == 1:
+    total = 0 
+
+    while (number > 0):
+      remainder = number % 10
+      total = total + remainder
+      number = number // 10
+    print(total)
+    quit()
+
+  if degree == 2:
+    total = 0 
+
+    while (number > 0):
+      remainder = number % 10
+      total = total + remainder
+      number = number // 10
+
+    total2 = 0
+
+    while (total > 0):
+      remainder2 = total % 10
+      total2 = total2 + remainder2
+      total = total // 10
+    print(total2)
+    quit()
+
+  if degree == 3:
+    total = 0 
+
+    while (number > 0):
+      remainder = number % 10
+      total = total + remainder
+      number = number // 10
+
+    total2 = 0
+
+    while (total > 0):
+      remainder2 = total % 10
+      total2 = total2 + remainder2
+      total = total // 10
+
+    total3 = 0
+
+    while (total2 > 0):
+      remainder3 = total2 % 10
+      total3 = total3 + remainder3
+      total2 = total2 // 10
+    print(total3)
+    quit()
+
+
+
+  if degree == 4:
+    total = 0 
+
+    while (number > 0):
+      remainder = number % 10
+      total = total + remainder
+      number = number // 10
+
+    total2 = 0
+
+    while (total > 0):
+      remainder2 = total % 10
+      total2 = total2 + remainder2
+      total = total // 10
+
+    total3 = 0
+
+    while (total2 > 0):
+      remainder3 = total2 % 10
+      total3 = total3 + remainder3
+      total2 = total2 // 10
+
+
+    total4 = 0
+
+    while (total3 > 0):
+      remainder4 = total3 % 10
+      total4 = total4 + remainder4
+      total3 = total3 // 10
+    print(total4)
+    quit()
