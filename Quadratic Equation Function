@@ -1,0 +1,7 @@
+  def quadratic_equation(a, b, c):
+    """ This function solves any quadratic equation in form of ax^2 + bx +c = 0. It returns 2 possible values(roots) for x. 
+        The values of x can be complex (in form of i). """
+
+    x1 = (-b + (b ** 2 + (-4 * a * c)) ** 0.5) / (2 * a)
+    x2 = (-b - (b ** 2 + (-4 * a * c)) ** 0.5) / (2 * a)
+    return "X1 = " + str(x1) +  " and " + "X2 = " + str(x2)
