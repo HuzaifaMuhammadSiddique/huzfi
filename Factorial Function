@@ -1,5 +1,5 @@
   def factorial(n):
-    """ This function calculates the factorial of a number. Factorial of a number is the product of one up till that number.
+    """ This function calculates the factorial of a number. Factorial of a number is the product of one up to that number.
         Factorial cannot be negative. """
 
     factorial = 1
